@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,7 +26,7 @@ List<Tab> myTab =[
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Tab Bar'),
+            title: Text('Tabu'),
             bottom: TabBar(
               tabs: myTab,
               indicator: BoxDecoration(
