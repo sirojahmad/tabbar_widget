@@ -26,7 +26,7 @@ List<Tab> myTab =[
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Tabu'),
+            title: Text('Versi Laptop'),
             bottom: TabBar(
               tabs: myTab,
               indicator: BoxDecoration(
