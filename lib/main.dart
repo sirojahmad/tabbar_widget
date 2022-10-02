@@ -16,6 +16,9 @@ List<Tab> myTab =[
   Tab(
     text: "Tab 3",
   ),
+  Tab(
+    text: "Tab 3",
+  ),
 ];
 
   @override
@@ -23,15 +26,17 @@ List<Tab> myTab =[
 
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: myTab.length,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Versi Laptop'),
+            title: Text('Versi PC'),
             bottom: TabBar(
               tabs: myTab,
-              indicator: BoxDecoration(
+              indicator: ShapeDecoration(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topRight: Radius.circular(10), topLeft: Radius.circular(10) )),
                 color: Colors.cyan,
               ),
+
             ),
           ),
         ),
